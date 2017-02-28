@@ -1,7 +1,9 @@
 import sys
 import time
+import datetime
 import scrollphat
 
+now = datetime.now()
 current = now.strftime("%H:%M")
 
 while True:
