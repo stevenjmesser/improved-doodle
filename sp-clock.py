@@ -2,14 +2,13 @@ import sys
 import time
 import scrollphat
 
-scrollphat.set_brightness(50)
+scrollphat.set_brightness(7)
 scrollphat.set_rotate(True)
-current = time.strftime("  "+"%H:%M"+" ")
 
 while True:
    try:
+        scrollphat.write_string(time.strftime("  "+"%H:%M"+" "))
         scrollphat.scroll()
-        scrollphat.write_string(current)
         time.sleep(0.35)
    except KeyboardInterrupt:
         scrollphat.clear()
