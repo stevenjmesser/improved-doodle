@@ -9,7 +9,8 @@ while True:
    try:
         scrollphat.write_string(time.strftime("  "+"%H:%M"+" "))
         scrollphat.scroll()
-        time.sleep(0.35)
+        time.sleep(0.15
+                   )
    except KeyboardInterrupt:
         scrollphat.clear()
         sys.exit(-1)
